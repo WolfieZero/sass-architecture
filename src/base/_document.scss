@@ -1,0 +1,13 @@
+// =============================================================================
+// Base >> Document
+// =============================================================================
+
+$color-background: #fff !default;
+$color-font: #333 !default;
+
+html {
+    @include type-base;
+    background-color: $color-background;
+    color: $color-font;
+    scroll-behavior: smooth;
+}

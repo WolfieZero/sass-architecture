@@ -1,0 +1,49 @@
+// =============================================================================
+// App
+// =============================================================================
+
+// 1. Config
+// =============================================================================
+// Variables
+
+@import 'config/colors';
+@import 'config/global';
+
+// 2. Tools
+// =============================================================================
+// Tools are only mixins and functions. They should be accessable to all layers.
+
+@import 'tools/typography';
+
+
+// 3. Base
+// =============================================================================
+// This are the most global definitions. It affectes base HTML elements and the
+// document as a whole along with normalisation and resets.
+
+@import 'base/normalizing';
+@import 'base/reset';
+@import 'base/box-sizing';
+@import 'base/document';
+@import 'base/document';
+
+// 4. Component
+// =============================================================================
+// Reusable classes that can be used in variety of locations. They should be
+// uniformed but allow overrides in the UI layer if required.
+
+@import 'component/form';
+
+// 5. UI
+// =============================================================================
+// Specific UI changes. One off classes that are intended for specific use-cases
+// or pages/templates.
+
+// ...
+
+// 6. Utility
+// =============================================================================
+// Utilities and helper classes with ability to override previous. Having them
+// last should negate the need of `!important`.
+
+// ...

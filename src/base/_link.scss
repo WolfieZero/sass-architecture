@@ -1,0 +1,14 @@
+// =============================================================================
+// Base >> Link
+// =============================================================================
+
+$color-link: blue !default;
+
+a {
+    color: $color-link;
+    text-decoration: none;
+
+    @include hocus {
+        text-decoration: underline;
+    }
+}

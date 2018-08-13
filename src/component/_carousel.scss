@@ -1,0 +1,77 @@
+// =============================================================================
+// Component >> Carousel
+// =============================================================================
+
+.carousel {
+    margin-bottom: 1em;
+
+    &__container {
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+// Owl Carousel
+// =============================================================================
+
+.owl {
+    $arrow-edge-margin: -.5em;
+
+    &-carousel {
+        overflow: hidden;
+    }
+
+    &-prev,
+    &-next {
+        bottom: 0;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+
+        @include hocus {
+            outline: none;
+        }
+    }
+
+    &-prev {
+        left: 0;
+        margin-left: $arrow-edge-margin;
+    }
+
+    &-next {
+        right: 0;
+        margin-right: $arrow-edge-margin;
+    }
+
+    &-dots {
+        position: relative;
+        text-align: center;
+    }
+
+    &-dot {
+        display: inline-block;
+
+        > span {
+            -webkit-backface-visibility: visible;
+            background-color: rgba($white, .5);
+            border-radius: 100%;
+            width: .75em;
+            height: .75em;
+            margin: .5em;
+            display: block;
+            transition: background-color .5s ease;
+        }
+
+        &.active {
+            > span {
+                background-color: rgba($white, 1);
+            }
+        }
+    }
+}
