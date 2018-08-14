@@ -10,7 +10,7 @@
     font-family: $font-family-base;
 }
 
-@mixin font-size($font-size, $line-height: auto) {
+@mixin type-size($font-size, $line-height: auto) {
     font-size: $font-size;
     font-size: ($font-size / $base-font-size) * 1rem;
 
