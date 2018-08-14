@@ -37,7 +37,7 @@
 // 5. UI
 // =============================================================================
 // Specific UI changes. One off classes that are intended for specific use-cases
-// or pages/templates.
+// or pages/templates. This could also include certain theming options as well.
 
 // ...
 
@@ -46,4 +46,5 @@
 // Utilities and helper classes with ability to override previous. Having them
 // last should negate the need of `!important`.
 
-// ...
+@import 'utility/debug';
+@import 'utility/spatial-awareness';

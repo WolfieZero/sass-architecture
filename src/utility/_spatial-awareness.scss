@@ -1,0 +1,28 @@
+// =============================================================================
+// Utility >> Spatial Awareness
+// =============================================================================
+// Displays borders on everything showing spacial awareness of the page.
+
+// Variables
+// =============================================================================
+
+$spatial-awareness: false !default;
+$color-debug: #c09 !default;
+
+// CSS
+// =============================================================================
+
+@if $spatial-awareness {
+
+    // Add a border to all things on a page to show spacial awareness
+    // -------------------------------------------------------------------------
+    // 1. Only use `!important` as this is for dev purposes only and should
+    //    never be on the live app.
+
+    *,
+    *:before,
+    *:after {
+        border: 1px solid $color-debug !important; // [1]
+    }
+
+}
