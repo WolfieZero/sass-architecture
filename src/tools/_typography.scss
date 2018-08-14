@@ -2,8 +2,12 @@
 // Tools >> Typography
 // =============================================================================
 
-@mixin font-heading {
+@mixin type-heading {
     font-family: $font-family-heading;
+}
+
+@mixin type-base {
+    font-family: $font-family-base;
 }
 
 @mixin font-size($font-size, $line-height: auto) {
