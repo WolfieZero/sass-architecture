@@ -1,0 +1,5 @@
+#!/bin/sh
+
+node-sass --watch src/app.scss > app.css
+
+exit 0
