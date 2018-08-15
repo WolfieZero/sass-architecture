@@ -1,0 +1,30 @@
+// =============================================================================
+// Config >> Variables
+// =============================================================================
+
+// Font & Typography
+// =============================================================================
+
+$base-unit: rem;
+
+$base-font-size: 16px;
+$base-line-height: 1.5;
+
+$font-family-brand: 'Exo';
+$font-family-mono: 'Source Code Pro';
+$font-family-sans: 'Open Sans';
+$font-family-serif: serif;
+
+$font-family-base: $font-family-sans, sans-serif;
+$font-family-header: $font-family-brand, sans-serif;
+
+// Layout
+// =============================================================================
+
+$base-spacing-unit: 1.5rem;
+
+// Development mode only stuff
+// =============================================================================
+
+$debug: false;
+$spatial-awareness: false;

@@ -2,7 +2,7 @@
 // App
 // =============================================================================
 
-// 1. Config
+// 1. Configs
 // =============================================================================
 // Variables
 
@@ -13,26 +13,30 @@
 // =============================================================================
 // Tools are only mixins and functions. They should be accessable to all layers.
 
+@import 'tools/helper';
+@import 'tools/list';
 @import 'tools/typography';
-
 
 // 3. Base
 // =============================================================================
 // This are the most global definitions. It affectes base HTML elements and the
 // document as a whole along with normalisation and resets.
 
-@import 'base/normalizing';
-@import 'base/reset';
+// @import 'base/normalizing';
+// @import 'base/reset';
+
 @import 'base/box-sizing';
 @import 'base/document';
-@import 'base/document';
+@import 'base/heading';
+@import 'base/image';
+@import 'base/link';
 
-// 4. Component
+// 4. Components
 // =============================================================================
 // Reusable classes that can be used in variety of locations. They should be
 // uniformed but allow overrides in the UI layer if required.
 
-@import 'component/form';
+// @import 'component/form';
 
 // 5. UI
 // =============================================================================
@@ -41,7 +45,7 @@
 
 // ...
 
-// 6. Utility
+// 6. Utilities
 // =============================================================================
 // Utilities and helper classes with ability to override previous. Having them
 // last should negate the need of `!important`.

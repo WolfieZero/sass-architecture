@@ -6,7 +6,7 @@
 // Variables
 // =============================================================================
 
-$debug: false !default;
+$debug: true !default;
 $color-debug: #c09 !default;
 $color-error: #911 !default;
 $color-warning: #da0 !default;
@@ -36,8 +36,8 @@ $color-warning: #da0 !default;
 
     ul,
     ol {
-        > :not(li) {
-            outline: none;
+        > li {
+            outline: none !important;
         }
     }
 
@@ -52,7 +52,7 @@ $color-warning: #da0 !default;
     // -------------------------------------------------------------------------
 
     [href="#"] {
-        @include debug-warn();
+        @include debug-warning();
     }
 
 }
